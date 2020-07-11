@@ -1,11 +1,11 @@
 #!/bin/bash
-read -p "Enter a number " number
-p="^[0-9]{2}[ ][0-9]{10}$"
-if [[ $number =~ $p ]]
+
+echo "Enter the Password:";
+read password;
+pattern="(^[A-Z]{1}[a-z]{7,}[@#$&]{1}[0-9]{1})$";
+if [[ $password =~ $pattern ]]
 then
-        echo "valid"
+echo "Password Is Valid";
 else
-        echo "invalid"
+echo "Password Is Not Valid";
 fi
-
-
