@@ -1,11 +1,11 @@
 #!/bin/bash
-read -p "Enter an email " email
-pattern1="^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-z]{2})*$";
-if [[ $email =~ $pattern1 ]]
+read -p "Enter a number " number
+p="^[0-9]{2}[ ][0-9]{10}$"
+if [[ $number =~ $p ]]
 then
-        echo "Valid"
+        echo "valid"
 else
-        echo "Invalid"
+        echo "invalid"
 fi
 
 
