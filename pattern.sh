@@ -1,11 +1,10 @@
 #!/bin/bash
-echo "Welcome to User registration problem"
-read -p "Enter your first name " first
+read -p "Enter your last name " last
 pattern="^[A-Z]{1}[a-z]{2.}$";
-if [[ $first =~ $pattern ]]
+if [[ $last =~ $pattern ]]
 then
-        echo "First name is valid";
+        echo "last name is valid";
 else
-        echo "First name is invalid";
+        echo "last name is invalid";
 fi
 
