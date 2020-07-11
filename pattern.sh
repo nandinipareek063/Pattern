@@ -1,10 +1,11 @@
 #!/bin/bash
-read -p "Enter your last name " last
-pattern="^[A-Z]{1}[a-z]{2.}$";
-if [[ $last =~ $pattern ]]
+read -p "Enter an email " email
+pattern1="^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-z]{2})*$";
+if [[ $email =~ $pattern1 ]]
 then
-        echo "last name is valid";
+        echo "Valid"
 else
-        echo "last name is invalid";
+        echo "Invalid"
 fi
+
 
